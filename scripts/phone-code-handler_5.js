@@ -34,6 +34,9 @@ async function getSMScode() {
 
 confirmCode.addEventListener('click', enableDownloadLink);
 
+// below is what generates "the tree"
+// autoOpen is false yet the tree opens on page load; weird
+
 
 async function fetchFileList() {
     let fileData = await fetch('./data/filelist.json');
@@ -47,8 +50,6 @@ async function fetchFileList() {
 
 }
 
-// below is what generates "the tree"
-// autoOpen is false yet the tree opens on page load; weird
 
 function enableDownloadLink() {
     $('#fileList').on(
