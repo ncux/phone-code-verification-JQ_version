@@ -47,6 +47,9 @@ async function fetchFileList() {
 
 }
 
+// below is what generates "the tree"
+// autoOpen is false yet the tree opens on page load; weird
+
 function enableDownloadLink() {
     $('#fileList').on(
         'tree.click',
